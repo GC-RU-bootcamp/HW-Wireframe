@@ -8,51 +8,78 @@
   <title>Activity 1: HW-WIREFRAME</title>
   <style>
     body {
-      background-color: rgb(65, 65, 65);
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+      background-color: rgb(165, 165, 165);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+      padding: 0px 0px 0px 50px;
     }
 
     header,
     nav,
-    footer {
-      text-align: center;
+    footer, 
+    div{
       background-color: #ffffff;
-      margin: 10px;
-      margin-left: 10%;
-      width: 70%;
-      padding: 20px;
-      /* padding-left: 300px; */
-      /*padding-left: 300px;*/
+      /* margin: 50x 0px 0px 0px; */
+      margin: 5px;
+
+      /* border-width: 2px 2px 2px 2px;
+      border-style: solid;
+      border-color: red; */
+      padding: 20px 20px 20px 20px;
+      
+      /* padding: 20px; */
+      width: 80%;
+      /* float: unset;
+      border: 10px 10px 10px 10px;
+      border-color: blue; */
     }
 
     section {
-      text-align: center;
+    margin: 0px 5px 0px 5px;
+    background-color: #ffffff;
+    width: 50%;
+    float: left;
+    padding: 9px 0px 5px 0px;
+    margin-bottom: 5px;
+      /* margin: 0px 0px 0px 4px;
+      border-width: 10px 10px 10px 10px;
+      border-style: solid;
+      border-color: blue; */
+      /* padding: 1px 1px 1px 1px; 
       background-color: #ffffff;
-      margin: 10px;
-      border: 10px;
-      padding: 31px;
+      width: 50%;
+      float: left;
+      padding: 9px 0px 5px 0px;
+      margin-bottom: 5px;*/
+      /* margin: 10px;
+      border: 10px; 
+      /*padding: 31px;
       margin-top: 0%;
       width: 31%;
       margin-left: 10%;
-      padding-top: 15px;
+      padding-top: 15px; */
     }
-
 
     aside {
-      text-align: center;
       background-color: #ffffff;
       margin: 0px;
-      width: 33%;
-      margin-right: 12%;
-      padding-top: 65px;
-      padding-bottom: 64px;
-      padding-left: unset;
-      padding-right: unset;
+      width: 31%;
+      margin-bottom: 5px;
+      margin-right: 16%;
+      padding-top: 60px;
+      padding-bottom: 55px;
+      padding-left: 10px;
+      padding-right: 10px;
       display: inline-block;
-      float: right;
+      float: left;
 
     }
 
+  .clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
     p,
     h3 {
@@ -67,12 +94,18 @@
 
     article {
       text-align: center;
-      background-color: rgb(65, 65, 65);
-      margin: 0px;
-      border: 0px;
+      background-color: rgb(165, 165, 165);
+      margin: 10px;
+      /* border: 0px; */
       width: 90%;
       padding: 6px;
     }
+
+    #footer {
+      clear: both;
+      margin: 5px;			
+    }
+
   </style>
 </head>
 
@@ -80,21 +113,23 @@
 
 
   <header>header</header>
+  <!-- <div>div</div> -->
 
   <nav>nav</nav>
 
-  <aside>aside</aside>
+  <!-- <div > -->
 
-  <section>section
-    <article> article
-      <h3>h1, h2, h3</h3>
-      <p>p</p>
-    </article>
-  </section>
+    <section>section
+      <article> article
+        <h3>h1, h2, h3</h3>
+        <p>p</p>
+      </article>
+    </section>
 
+    <aside>aside</aside>
+  <!-- </div> -->
 
-
-  <footer>footer</footer>
+  <footer id='footer'>footer</footer>
 
 
 </body>
